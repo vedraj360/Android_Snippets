@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+  
+    <!--default touch feedback with border-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center|start"
+        android:padding="24dp"
+        android:text="Ripple With Border"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+  
+    <!--default touch feedback without border-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center|start"
+        android:padding="24dp"
+        android:text="Ripple Without Border"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+  
+    <!--custom touch feedback with border-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_bordered_ripple"
+        android:clickable="true"
+        android:focusable="true"
+        android:foregroundGravity="bottom"
+        android:gravity="center|start"
+        android:padding="24dp"
+        android:text="Custom Ripple With Border"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+  
+    <!--custom touch feedback without border-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_borderless_ripple"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center|start"
+        android:padding="24dp"
+        android:text="Custom Ripple Without Border"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+  
+</LinearLayout>
